@@ -1,0 +1,1271 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin-top: 150px;
+}
+body main section {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  transform-style: preserve-3d;
+  transition: 6s;
+}
+body main section:hover {
+  transform: rotateY(180deg);
+}
+
+
+main section article {
+  display: block;
+  position: absolute;
+  width: 420px;
+  height: 420px;
+}
+
+/* B.sus */
+main section article:nth-child(2) {
+  height: 50px;
+  background-color: #46241a;
+  transform: rotateX(90deg) translateZ(25px);
+}
+
+/* C stanga*/
+main section article:nth-child(3) {
+  width: 50px;
+  background-color: #46241a;
+  transform: rotateY(90deg) translateZ(-25px);
+}
+/* D jos */
+main section article:nth-child(4) {
+  height: 50px;
+  background-color: #46241a;
+  transform: rotateX(90deg) translateZ(-375px);
+}
+/* E spate */
+main section article:nth-child(5) {
+  background-color: lightgrey;
+  transform: translateZ(-25px);
+  transition: 6s;
+}
+/* Sah */
+main section article:nth-child(5) section:nth-child(1) {
+  transform: translateZ(-25px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 420px;
+  height: 420px;
+  border:none
+}
+
+main section article:nth-child(5) section:nth-child(1) div {
+  width: 52.5px;
+  height: 52.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42.5px;
+}
+
+/* culoare gri pe pionii 1-16 */
+
+main section article:nth-child(5) section:nth-child(1) div:nth-child(-n + 16) {
+  color: #383934;
+}
+/* galben pe pionnii de la sf */
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 46):nth-child(-n + 64) {
+  color: #dfcf70;
+}
+
+/* culoare negru pe divuri */
+/* 1 */
+
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 1):nth-child(-n + 8):nth-child(odd) {
+  background-color: white;
+}
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 1):nth-child(-n + 8):nth-child(even) {
+  background-color: black;
+}
+
+/* 2 */
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 9):nth-child(-n + 16):nth-child(even) {
+  background-color: white;
+}
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 9):nth-child(-n + 16):nth-child(odd) {
+  background-color: black;
+}
+
+/* 3 */
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 17):nth-child(-n + 24):nth-child(odd) {
+  background-color: white;
+}
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 17):nth-child(-n + 24):nth-child(even) {
+  background-color: black;
+}
+
+/* 4 */
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 25):nth-child(-n + 33):nth-child(even) {
+  background-color: white;
+}
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 25):nth-child(-n + 33):nth-child(odd) {
+  background-color: black;
+}
+
+/* 5 */
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 33):nth-child(-n + 40):nth-child(odd) {
+  background-color: white;
+}
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 33):nth-child(-n + 40):nth-child(even) {
+  background-color: black;
+}
+
+/* 6 */
+
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 41):nth-child(-n + 49):nth-child(even) {
+  background-color: white;
+}
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 41):nth-child(-n + 48):nth-child(odd) {
+  background-color: black;
+}
+
+/* 7 */
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 48):nth-child(-n + 56):nth-child(odd) {
+  background-color: white;
+}
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 49):nth-child(-n + 56):nth-child(even) {
+  background-color: black;
+}
+
+/* 8 */
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 57):nth-child(-n + 64):nth-child(even) {
+  background-color: white;
+}
+main
+  section
+  article:nth-child(5)
+  section:nth-child(1)
+  div:nth-child(n + 57):nth-child(-n + 64):nth-child(odd) {
+  background-color: black;
+}
+
+/* F dreapta */
+main section article:nth-child(6) {
+  width: 50px;
+  background-color: #46241a;
+  transform: rotateY(90deg) translateZ(395px);
+}
+
+/* A table fata */
+main section article:first-child {
+  max-width: 404px;
+  max-height: 404px;
+  border: 8.5px ridge #cb8a60;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url(./pictures/fundal.jpg);
+}
+/* triunghiuri primul set */
+main
+  section
+  article:first-child
+  > div:nth-child(odd):nth-child(n + 1):nth-child(-n + 13):not(:nth-child(7)) {
+  width: 0;
+  height: 145px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 130px solid #fff;
+  border-bottom: 130px solid black;
+}
+/* Adăugăm un pseudo-element pentru bulină */
+main
+  section
+  article:first-child
+  > div:nth-child(odd):nth-child(n + 1):nth-child(-n + 13):not(
+    :nth-child(7)
+  )::before {
+  content: ""; /* Conținut gol, pentru a crea pseudo-elementul */
+  position: absolute;
+  z-index: 2;
+  width: 5px; /* Dimensiunea bulinei */
+  height: 5px; /* Dimensiunea bulinei */
+  background-color: white; /* Culoarea bulinei */
+  border-radius: 50%; /* Pentru a o face rotundă */
+  transform: translateX(-50%);
+  /* Centrăm pe orizontală */
+}
+main
+  section
+  article:first-child
+  > div:nth-child(even):nth-child(n + 1):nth-child(-n + 13):not(:nth-child(7)) {
+  width: 0;
+  height: 145px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 130px solid black;
+  border-bottom: 130px solid white;
+}
+/* Adăugăm un pseudo-element pentru bulină */
+main
+  section
+  article:first-child
+  > div:nth-child(even):nth-child(n + 1):nth-child(-n + 13):not(
+    :nth-child(7)
+  )::before {
+  content: ""; /* Conținut gol, pentru a crea pseudo-elementul */
+  position: absolute;
+  width: 5px; /* Dimensiunea bulinei */
+  height: 5px; /* Dimensiunea bulinei */
+  background-color: black; /* Culoarea bulinei */
+  border-radius: 50%; /* Pentru a o face rotundă */
+  transform: translateX(-50%);
+  /* Centrăm pe orizontală */
+}
+/* Stilizarea div-ului 7 */
+main section article:first-child > div:nth-child(7) {
+  border-left: 8.5px ridge #cb8a60;
+  border-right: 8.5px ridge #cb8a60;
+}
+
+/*  al 2lea sectiune peste divuri */
+main section article:first-child > section {
+  max-width: 403px;
+  max-height: 403px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transform: translateZ(25px);
+}
+/* triungiuri al 2lea set spanuri */
+main
+  section
+  article:first-child
+  > section
+  > span:nth-child(odd):nth-child(n + 1):nth-child(-n + 13):not(:nth-child(7)) {
+  /* position: relative; */
+  height: 214px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 95px solid black;
+  border-bottom: 95px solid white;
+}
+/* Adăugăm un pseudo-element pentru bulină */
+main
+  section
+  article:first-child
+  > section
+  > span:nth-child(odd):nth-child(n + 1):nth-child(-n + 13):not(
+    :nth-child(7)
+  )::before {
+  content: ""; /* Conținut gol, pentru a crea pseudo-elementul */
+  top: 268px;
+  position: absolute;
+  z-index: 2;
+  width: 5px; /* Dimensiunea bulinei */
+  height: 5px; /* Dimensiunea bulinei */
+  background-color: black; /* Culoarea bulinei */
+  border-radius: 50%; /* Pentru a o face rotundă */
+  transform: translateX(-50%);
+  /* Centrăm pe orizontală */
+}
+
+main
+  section
+  article:first-child
+  > section
+  > span:nth-child(even):nth-child(n + 1):nth-child(-n + 13):not(
+    :nth-child(7)
+  ) {
+  /* position: relative; */
+  height: 214px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 95px solid white;
+  border-bottom: 95px solid black;
+}
+/* Adăugăm un pseudo-element pentru bulină */
+main
+  section
+  article:first-child
+  > section
+  > span:nth-child(even):nth-child(n + 1):nth-child(-n + 13):not(
+    :nth-child(7)
+  )::before {
+  content: ""; /* Conținut gol, pentru a crea pseudo-elementul */
+  top: 266px;
+  position: absolute;
+  width: 5px; /* Dimensiunea bulinei */
+  height: 5px; /* Dimensiunea bulinei */
+  background-color: white; /* Culoarea bulinei */
+  border-radius: 50%; /* Pentru a o face rotundă */
+  transform: translateX(-50%);
+  /* Centrăm pe orizontală */
+}
+/* Stilizarea div-ului 7 */
+main section article:first-child > section > span:nth-child(7) {
+  background-color: transparent;
+  width: 7px;
+}
+
+main
+  section:first-child
+  article:first-child
+  div:first-child
+  > section:nth-child(1) {
+  top: 0px;
+  left: 2px;
+}
+main
+  section:first-child
+  article:first-child
+  div:nth-child(6)
+  > section:nth-child(2) {
+  top: 275px;
+  left: 163px;
+}
+main
+  section:first-child
+  article:first-child
+  div:nth-child(9)
+  > section:nth-child(1) {
+  top: -0.2px;
+  left: 245px;
+}
+main
+  section:first-child
+  article:first-child
+  div:nth-child(13)
+  > section:nth-child(1) {
+  left: 376px;
+  top: 0px;
+}
+/* buolina pe div NEGRE*/
+main
+  section:first-child
+  article:first-child
+  div:first-child
+  > section:nth-child(1),
+main
+  section:first-child
+  article:first-child
+  div:nth-child(9)
+  > section:nth-child(1),
+main
+  section:first-child
+  article:first-child
+  div:nth-child(6)
+  > section:nth-child(2),
+main
+  section:first-child
+  article:first-child
+  div:nth-child(13)
+  > section:nth-child(1) {
+  width: 32px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: none;
+}
+main
+  section:first-child
+  article:first-child
+  div:first-child
+  section:nth-child(1)
+  span,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(9)
+  > section:nth-child(1)
+  span,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(6)
+  > section:nth-child(2)
+  span,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(13)
+  > section:nth-child(1)
+  span {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 26px;
+  height: 26px;
+  background-color: black;
+  border-radius: 50%;
+}
+main
+  section:first-child
+  article:first-child
+  div:first-child
+  section:nth-child(1)
+  span::before,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(9)
+  > section:nth-child(1)
+  span::before,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(6)
+  > section:nth-child(2)
+  span::before,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(13)
+  > section:nth-child(1)
+  span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #0c0b09;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); /* efect glossy */
+}
+
+main
+  section:first-child
+  article:first-child
+  div:first-child
+  > section:nth-child(2) {
+  top: 275px;
+  left: 2px;
+}
+main
+  section:first-child
+  article:first-child
+  div:nth-child(6)
+  > section:first-child {
+  top: -0.2px;
+  left: 163px;
+}
+main
+  section:first-child
+  article:first-child
+  div:nth-child(9)
+  > section:nth-child(2) {
+  top: 325px;
+  left: 249px;
+}
+main
+  section:first-child
+  article:first-child
+  div:nth-child(13)
+  > section:nth-child(2) {
+  top: 351px;
+  left: 376px;
+}
+/* buolina pe div ALBE*/
+main
+  section:first-child
+  article:first-child
+  div:first-child
+  > section:nth-child(2),
+main
+  section:first-child
+  article:first-child
+  div:nth-child(6)
+  > section:first-child,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(9)
+  > section:nth-child(2),
+main
+  section:first-child
+  article:first-child
+  div:nth-child(13)
+  > section:nth-child(2) {
+  width: 32px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: none;
+}
+main
+  section:first-child
+  article:first-child
+  div:first-child
+  section:nth-child(2)
+  span,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(6)
+  > section:first-child
+  span,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(9)
+  > section:nth-child(2)
+  span,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(13)
+  > section:nth-child(2)
+  span {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+}
+main
+  section:first-child
+  article:first-child
+  div:first-child
+  section:nth-child(2)
+  span::before,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(6)
+  > section:first-child
+  span::before,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(9)
+  > section:nth-child(2)
+  span::before,
+main
+  section:first-child
+  article:first-child
+  div:nth-child(13)
+  > section:nth-child(2)
+  span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: wheat;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 1); /* efect glossy */
+}
+
+/* Zar  1 stanga*/
+main section article:nth-child(1) > section:nth-child(15) {
+  width: 20px;
+  height: 20px;
+  top: 180px;
+  left: 50px;
+  border: none;
+  transform-style: preserve-3d;
+  rotate: 1 1 0 45deg;
+  animation: combinat 3s infinite;
+}
+/* animation: rotate 500ms infinite alternate ,moveForwardAndBackward 10s ease-in-out infinite; */
+/* animation: roll 10s linear infinite, moveForwardAndBackward 10s ease-in-out infinite; */
+/* animation: spin 5s linear infinite, scale 2s ease-in-out infinite; */
+/* animation: moveForwardAndBackward 10s ease-in-out infinite; */
+/* animation: bounce 2s ease infinite; */
+/* animation: shake 5s cubic-bezier(.36,2.1,.51,1) infinite; */
+
+@keyframes combinat {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) scale3d(2.9 2.9 2.9);
+  }
+
+  25% {
+    transform: rotateX(10deg) rotateY(10deg) scale3d(2.8, 2.8, 2.8);
+  }
+  50% {
+    transform: rotateX(15deg) rotateY(15deg) scale3d(2.5, 2.5, 2.5);
+  }
+  75% {
+    transform: rotateX(360deg) rotateY(180deg) scale3d(2, 2, 2);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+  }
+}
+/* @keyframes roll {
+  0%, 100% {
+      transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+      transform: rotateX(360deg) rotateY(0deg);
+  }
+  50% {
+      transform: rotateX(360deg) rotateY(360deg);
+  }
+  75% {
+      transform: rotateX(0deg) rotateY(360deg);
+  }
+} */
+
+/* @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes scale {
+  0%, 100% {
+      transform: scale(1);
+  }
+  25% {
+      transform: scale(1.2);
+  }
+  50% {
+      transform: scale(1);
+  }
+  75% {
+      transform: scale(0.8);
+  }
+} */
+
+/* @keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+} */
+/* 
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+} */
+
+/* @keyframes moveForwardAndBackward {
+  0% {
+      transform: translateZ(0);
+  }
+  25% {
+      transform: translateZ(10px);
+  }
+  50% {
+      transform: translateZ(0);
+  }
+  75% {
+      transform: translateZ(-10px);
+  }
+  100% {
+      transform: translateZ(0);
+  }
+} */
+
+/* aspect fete */
+main section article:nth-child(1) > section:nth-child(15) > div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 0.5px solid black;
+}
+
+/* aspect puncte */
+main section article:nth-child(1) > section:nth-child(15) > div span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Puncte pentru fața 1 (1) */
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(1)
+  span {
+  top: 50%;
+  left: 50%;
+}
+
+/* Puncte pentru fața 2 (2) */
+
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(2)
+  span:nth-child(1) {
+  top: 25%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(2)
+  span:nth-child(2) {
+  top: 75%;
+  left: 75%;
+}
+
+/* Puncte pentru fața 3 (3) */
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(3)
+  span:nth-child(1) {
+  top: 25%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(3)
+  span:nth-child(2) {
+  top: 50%;
+  left: 50%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(3)
+  span:nth-child(3) {
+  top: 75%;
+  left: 25%;
+}
+
+/* Puncte pentru fața 4 (4) */
+
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(4)
+  span:nth-child(1) {
+  top: 75%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(4)
+  span:nth-child(2) {
+  top: 25%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(4)
+  span:nth-child(3) {
+  top: 25%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(4)
+  span:nth-child(4) {
+  top: 75%;
+  left: 75%;
+}
+
+/* Puncte pentru fața 5 (5) */
+
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(5)
+  span:nth-child(1) {
+  top: 75%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(5)
+  span:nth-child(2) {
+  top: 25%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(5)
+  span:nth-child(3) {
+  top: 25%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(5)
+  span:nth-child(4) {
+  top: 75%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(5)
+  span:nth-child(5) {
+  top: 50%;
+  left: 50%;
+}
+
+/* Puncte pentru fața 6 (6) */
+
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(6)
+  span:nth-child(1) {
+  top: 75%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(6)
+  span:nth-child(2) {
+  top: 25%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(6)
+  span:nth-child(3) {
+  top: 25%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(6)
+  span:nth-child(4) {
+  top: 75%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(6)
+  span:nth-child(5) {
+  top: 50%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(15)
+  div:nth-child(6)
+  span:nth-child(6) {
+  top: 50%;
+  left: 25%;
+}
+
+main section article:nth-child(1) > section:nth-child(15) div:nth-child(1) {
+  transform: rotateY(0deg) translateZ(10px);
+}
+
+main section article:nth-child(1) > section:nth-child(15) div:nth-child(2) {
+  transform: rotateX(90deg) translateZ(10px);
+}
+
+main section article:nth-child(1) > section:nth-child(15) div:nth-child(3) {
+  transform: rotateX(-90deg) translateZ(10px);
+}
+
+main section article:nth-child(1) > section:nth-child(15) div:nth-child(4) {
+  transform: rotateY(90deg) translateZ(10px);
+}
+
+main section article:nth-child(1) > section:nth-child(15) div:nth-child(5) {
+  transform: rotateY(-90deg) translateZ(10px);
+}
+
+main section article:nth-child(1) > section:nth-child(15) div:nth-child(6) {
+  transform: rotateX(180deg) translateZ(10px);
+}
+
+/* Keyframes pentru animația "roll" */
+/* @keyframes roll {
+    0%, 100% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    25% {
+        transform: rotateX(360deg) rotateY(0deg);
+    }
+    50% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+    75% {
+        transform: rotateX(0deg) rotateY(360deg);
+    }
+} */
+
+/* Zar  1 dreapta*/
+main section article:nth-child(1) > section:nth-child(16) {
+  width: 20px;
+  height: 20px;
+  top: 220px;
+  left: 95px;
+  border: none;
+  transform-style: preserve-3d;
+  rotate: 1 -2 -1 90deg;
+  animation: combinat2 3s infinite;
+}
+@keyframes combinat2 {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) scale3d(2.9 2.9 2.9);
+  }
+  25% {
+    transform: rotateX(0deg) rotateY(10deg) scale3d(2.8, 2.8, 2.8);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(0deg) scale3d(2.5, 2.5, 2.5);
+  }
+  75% {
+    transform: rotateX(360deg) rotateY(180deg) scale3d(2, 2, 2);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+  }
+}
+/* aspect fete */
+main section article:nth-child(1) > section:nth-child(16) > div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 0.5px solid black;
+}
+
+/* aspect puncte */
+main section article:nth-child(1) > section:nth-child(16) > div span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Puncte pentru fața 1 (1) */
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(1)
+  span {
+  top: 50%;
+  left: 50%;
+}
+
+/* Puncte pentru fața 2 (2) */
+
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(2)
+  span:nth-child(1) {
+  top: 25%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(2)
+  span:nth-child(2) {
+  top: 75%;
+  left: 75%;
+}
+
+/* Puncte pentru fața 3 (3) */
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(3)
+  span:nth-child(1) {
+  top: 25%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(3)
+  span:nth-child(2) {
+  top: 50%;
+  left: 50%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(3)
+  span:nth-child(3) {
+  top: 75%;
+  left: 25%;
+}
+
+/* Puncte pentru fața 4 (4) */
+
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(4)
+  span:nth-child(1) {
+  top: 75%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(4)
+  span:nth-child(2) {
+  top: 25%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(4)
+  span:nth-child(3) {
+  top: 25%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(4)
+  span:nth-child(4) {
+  top: 75%;
+  left: 75%;
+}
+
+/* Puncte pentru fața 5 (5) */
+
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(5)
+  span:nth-child(1) {
+  top: 75%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(5)
+  span:nth-child(2) {
+  top: 25%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(5)
+  span:nth-child(3) {
+  top: 25%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(5)
+  span:nth-child(4) {
+  top: 75%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(5)
+  span:nth-child(5) {
+  top: 50%;
+  left: 50%;
+}
+
+/* Puncte pentru fața 6 (6) */
+
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(6)
+  span:nth-child(1) {
+  top: 75%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(6)
+  span:nth-child(2) {
+  top: 25%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(6)
+  span:nth-child(3) {
+  top: 25%;
+  left: 25%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(6)
+  span:nth-child(4) {
+  top: 75%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(6)
+  span:nth-child(5) {
+  top: 50%;
+  left: 75%;
+}
+main
+  section
+  article:nth-child(1)
+  > section:nth-child(16)
+  div:nth-child(6)
+  span:nth-child(6) {
+  top: 50%;
+  left: 25%;
+}
+
+main section article:nth-child(1) > section:nth-child(16) div:nth-child(1) {
+  transform: rotateY(0deg) translateZ(10px);
+}
+
+main section article:nth-child(1) > section:nth-child(16) div:nth-child(2) {
+  transform: rotateX(90deg) translateZ(10px);
+}
+
+main section article:nth-child(1) > section:nth-child(16) div:nth-child(3) {
+  transform: rotateX(-90deg) translateZ(10px);
+}
+
+main section article:nth-child(1) > section:nth-child(16) div:nth-child(4) {
+  transform: rotateY(90deg) translateZ(10px);
+}
+
+main section article:nth-child(1) > section:nth-child(16) div:nth-child(5) {
+  transform: rotateY(-90deg) translateZ(10px);
+}
+
+main section article:nth-child(1) > section:nth-child(16) div:nth-child(6) {
+  transform: rotateX(180deg) translateZ(10px);
+}
+
+
